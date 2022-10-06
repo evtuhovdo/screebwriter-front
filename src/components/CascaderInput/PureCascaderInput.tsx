@@ -2,20 +2,19 @@ import React, { FC } from 'react';
 import { Cascader } from 'antd';
 import { CascaderProps } from 'antd/lib/cascader';
   
-/** BAD TS declaration */
-// interface IProps extends CascaderProps {
-//  }
+ interface IProps extends CascaderProps {
+ }
 
-/**CORRECT TS declaration */
-export type  IProps = CascaderProps<any> & {
-  onPopupVisibleChange?:any,
-  placeholder?:any,
-  onChange?:any,
-  value?:any,
-  disabled?:any,
-  options?:any,
+/**CORRECT TS declaration for latest version of antd*/
+// export type  IProps = CascaderProps  & {
+//   onPopupVisibleChange?:any,
+//   placeholder?:any,
+//   onChange?:any,
+//   value?:any,
+//   disabled?:any,
+//   options?:any,
+// }
 
-}
 const PureCascaderInput: FC<IProps> = (
   {
     onPopupVisibleChange,

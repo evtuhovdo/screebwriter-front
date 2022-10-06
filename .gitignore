@@ -24,3 +24,5 @@ yarn-debug.log*
 yarn-error.log*
 
 docker-compose.override.yml
+# 
+package-lock.json

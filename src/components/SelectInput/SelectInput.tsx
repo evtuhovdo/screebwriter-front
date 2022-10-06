@@ -10,13 +10,12 @@ import find from 'lodash/find';
 import PureSelect from './PureSelect';
 
 export interface ISelectOption {
-  // WRONG declaration 
-  // value: string | number | object,
-  // label: string,
-
-  // CORRECT declaration 
-  value: string ,
+   value: string | number | object,
   label: string,
+
+  // CORRECT declaration for latest antd version
+  // value: string ,
+  // label: string,
 }
 
 interface IProps extends FieldProps {
