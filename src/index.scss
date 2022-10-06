@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input, textarea {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.react-tabs {
+
+}
+
+.react-tabs__tab-list {
+
+}
+
+.react-tabs__tab {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #00AFB9;
+  cursor: pointer;
+  user-select: none;
+  padding-bottom: 6px;
+}
+
+.react-tabs__tab + .react-tabs__tab {
+  margin-left: 20px;
+}
+
+.react-tabs__tab-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #C4C4C4;;
+}
+
+.react-tabs__tab--selected {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+  border-bottom: 2px solid #333333;
+}
+
+.react-tabs__tab-panel {
+
+}
+
+.Loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+
+.top-pagination {
+  margin-top: 10px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.25);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.25);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.25);
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.25);
+}

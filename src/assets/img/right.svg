@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="67px" viewBox="0 0 34 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-1" x="0" y="0" width="36" height="67"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="right" transform="translate(-2.000000, 0.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask"></g>
+            <g mask="url(#mask-2)">
+                <g transform="translate(2.000000, -271.000000)">
+                    <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <path d="M20,0 C17.7909,0 16,1.7909 16,4 L16,277 L0,293 L0,317 L16,333 L16,606 C16,608.209 17.7909,610 20,610 L603,610 L603,0 L20,0 Z" id="Path" fill="#FFFFFF"></path>
+                        <path d="M20,0 C17.7909,0 16,1.7909 16,4 L16,277 L0,293 L0,317 L16,333 L16,606 C16,608.209 17.7909,610 20,610 L603,610 L603,0 L20,0 Z" id="Path" fill-opacity="0.08" fill="#005FB8"></path>
+                    </g>
+                    <path d="M16.2843,306.627 C19.0144,306.627 21.2275,304.472 21.2275,301.813 C21.2275,299.155 19.0144,297 16.2843,297 C13.5542,297 11.341,299.155 11.341,301.813 C11.341,304.472 13.5542,306.627 16.2843,306.627 Z" id="Path" fill="#00AFB9" fill-rule="nonzero"></path>
+                    <path d="M16.2843,313 C20.1506,313 23.2843,311.705 23.2843,310.822 C23.2843,309.396 21.4833,307.343 18.9281,306.432 C18.1451,306.859 17.2436,307.103 16.2841,307.103 C15.3247,307.103 14.4235,306.859 13.6401,306.432 C11.0854,307.343 9.2843,309.396 9.2843,310.822 C9.2843,311.705 12.4184,313 16.2843,313 Z" id="Path" fill="#00AFB9" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

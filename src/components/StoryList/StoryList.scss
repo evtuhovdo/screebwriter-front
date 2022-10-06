@@ -1,0 +1,185 @@
+.StoryList {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  max-width: 1020px;
+  width: 100%;
+
+  &__Error {
+    max-width: 300px;
+    margin: 0 auto;
+
+    .Button {
+      margin-top: 20px;
+    }
+  }
+
+  &__Loading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__table {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__filters {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1020px;
+    flex-wrap: wrap;
+
+    .block-switcher {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      label {
+        cursor: pointer;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        vertical-align: center;
+        //line-height: 16px;
+
+        color: #000000;
+        padding: 0;
+        margin: 0;
+
+        button {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .filterTitle {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+
+      color: #000000;
+      padding: 0;
+      margin: 0;
+    }
+
+    .filter-select-wrapper {
+      min-width: 280px;
+
+      input {
+        font-size: 14px;
+      }
+
+      .ant-cascader-picker {
+        height: 38px;
+        border-radius: 4px;
+        min-width: 280px;
+        input {
+          height: 38px;
+          border-radius: 4px;
+        }
+      }
+
+      & > div {
+        min-width: 280px;
+        border-radius: 4px;
+      }
+
+      .ant-input-affix-wrapper-lg {
+        font-size: inherit;
+      }
+
+      .ant-input-affix-wrapper {
+        height: 38px;
+        border-radius: 4px;
+
+        .ant-input-prefix {
+          color: #8f8e8e;
+        }
+      }
+    }
+
+    .filter-select-wrapper {
+      margin: 10px;
+    }
+  }
+
+  &__noStories {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    padding: 20px 0 0;
+    margin: 0;
+  }
+
+  &__bulk_row {
+    display: flex;
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+
+  &__bulk_text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__bulk_actions {
+    display: flex;
+    padding-left: 10px;
+
+    .editor-appoint {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 20px;
+
+      & > div {
+        margin-left: 20px;
+      }
+
+      .editor-appoint-select-root {
+        & > div {
+          min-width: 300px;
+        }
+      }
+    }
+  }
+
+  &__bulk_action {
+    color: #00AFB9;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__bulk_action + &__bulk_action {
+    padding-left: 10px;
+  }
+
+  .admin-excel-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+
+    & > button {
+      margin-right: 50px;
+    }
+  }
+}

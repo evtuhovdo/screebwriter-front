@@ -1,0 +1,17 @@
+.StoryCommentSection {
+  padding-top: 30px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-left: 141px;
+
+  button.reply {
+    appearance: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .ui.comments .comment .text p {
+    white-space: pre-line;
+  }
+}

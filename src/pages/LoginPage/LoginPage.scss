@@ -1,0 +1,34 @@
+.LoginPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .big-logo {
+    background: url("../../assets/img/big-logo.svg") no-repeat;
+    width: 85px;
+    height: 80px;
+    margin-top: 40px;
+  }
+
+  .title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+
+  .TextInput + .TextInput {
+    margin-top: 20px;
+    width: 290px;
+  }
+
+  .Button {
+    margin-top: 20px;
+    width: 290px;
+  }
+}

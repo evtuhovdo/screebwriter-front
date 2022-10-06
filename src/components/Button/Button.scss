@@ -1,0 +1,52 @@
+.Button {
+  cursor: pointer;
+  width: 100%;
+  height: 44px;
+  color: #fff;
+  background-color: #00AFB9;
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  border: none;
+  transition: 0.2s ease-in-out all;
+
+  &:not(&--outline) {
+    &:hover {
+      background-color: #03C5D0;
+    }
+
+    &:active {
+      background-color: #06A0A9;
+    }
+
+    &:disabled {
+      background-color: #BDBDBD;
+    }
+  }
+
+  &--outline {
+    color: #00AFB9;
+    background-color: #fff;
+    border: 1px solid #00AFB9;
+
+    &:hover {
+      color: #03C5D0;
+      border-color: #03C5D0;
+    }
+
+    &:active {
+      color: #06A0A9;
+      border-color: #06A0A9;
+    }
+
+    &:disabled {
+      color: #BDBDBD;
+      border-color: #BDBDBD;
+    }
+  }
+}

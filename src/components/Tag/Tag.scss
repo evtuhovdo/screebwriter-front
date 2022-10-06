@@ -1,0 +1,26 @@
+.Tag {
+  padding: 2px 4px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #00AFB9;
+  background: #FFFFFF;
+  border: 1px solid #00AFB9;
+  border-radius: 2px;
+  display: inline-block;
+  cursor: grab;
+  user-select: none;
+
+  &:hover {
+    border-color: #03C5D0;
+  }
+
+  &:active {
+    border-color: #06A0A9;
+  }
+
+  &:disabled {
+    border-color: #BDBDBD;
+  }
+}

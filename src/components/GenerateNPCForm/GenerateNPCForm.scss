@@ -1,0 +1,211 @@
+.GenerateNPCForm {
+  width: auto;
+  min-height: 900px;
+  position: absolute;
+  z-index: 2;
+  top: 260px;
+  transition: 0.2s ease-in-out transform;
+  padding: 20px 40px 20px 60px;
+  border-radius: 0 4px 4px 0;
+
+  background: linear-gradient(0deg, rgba(131, 91, 198, 0.08), rgba(131, 91, 198, 0.08)), #FFFFFF;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+  &--hidden {
+    transform: translateX(calc(-100% + 30px));
+  }
+
+  &__toggle {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 10px;
+    border-radius: 0 4px 4px 0;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      top: calc(50% - 33px);
+      right: -16px;
+      width: 32px;
+      height: 67px;
+      background: url("./../../assets/img/copy-circle.svg") no-repeat;
+    }
+  }
+
+  .columns {
+    height: 100%;
+    padding-bottom: 10px;
+    display: flex;
+
+    .column + .column {
+      margin-left: 20px;
+      padding-left: 20px;
+    }
+
+    .column {
+      height: auto;
+      border-right: 1px solid #C4C4C4;
+      padding-right: 20px;
+      position: relative;
+
+      .add-npc-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        padding-top: 10px;
+        padding-bottom: 8px;
+        position: relative;
+        top: 0;
+        left: -10px;
+      }
+
+      .money-input-wrapper {
+        margin-top: 20px;
+      }
+
+      &--big {
+        width: 280px;
+      }
+
+      &--add {
+        padding-left: 58px;
+        border-right: none;
+        padding-right: 0;
+
+        .button {
+          cursor: pointer;
+          width: 40px;
+          height: 40px;
+          background: url("./../../assets/img/plus.svg") no-repeat;
+        }
+      }
+
+      button.remove {
+        cursor: pointer;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        border: none;
+        background: url("./../../assets/img/minus.svg") no-repeat center;
+
+        &.disabled {
+          background: url("./../../assets/img/minus-gray.svg") no-repeat center !important;
+          cursor: not-allowed;
+        }
+      }
+
+      button.copy {
+        cursor: pointer;
+        position: absolute;
+        top: 5px;
+        right: 40px;
+        width: 20px;
+        height: 20px;
+        border: none;
+        background: url("./../../assets/img/copy.svg") no-repeat center;
+
+        &.disabled {
+          background: url("./../../assets/img/copy-gray.svg") no-repeat center !important;
+          cursor: not-allowed;
+        }
+      }
+
+      h2 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+
+        color: #000000;
+        padding: 0;
+        margin: 0;
+      }
+
+      .radio-label {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        padding-top: 10px;
+        padding-bottom: 8px;
+      }
+
+      .TextInput, .SelectInput, .CascaderInput {
+        padding-top: 10px;
+      }
+
+      .react-tabs {
+        padding-top: 10px;
+      }
+
+      .tabs-gg {
+        border: 1px solid #cccccc;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 4px;
+      }
+
+      .react-tabs__tab-panel .TextInput {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .radios {
+    display: flex;
+
+    .left {
+      width: 50%;
+    }
+
+    .right {
+      width: 50%;
+    }
+  }
+
+  .label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    padding-top: 3px;
+
+    &--bold {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  .tab-3 {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 96px 61px 61px;
+    grid-template-rows: 1fr;
+    gap: 8px 20px;
+    grid-auto-flow: row;
+    grid-template-areas: ". . .";
+  }
+
+
+  .tab-2 {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 96px 142px;
+    grid-template-rows: 1fr;
+    gap: 8px 20px;
+    grid-auto-flow: row;
+    grid-template-areas: ". .";
+  }
+}

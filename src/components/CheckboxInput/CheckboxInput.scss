@@ -1,0 +1,60 @@
+.CheckboxInput {
+  margin-bottom: 8px;
+
+  label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 20px;
+    margin-right: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    user-select: none;
+  }
+
+  transition: opacity 0.1s ease-in-out;
+
+  &--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    label {
+      cursor: not-allowed;
+    }
+  }
+}
+
+.CheckboxInput input[type=checkbox] {
+  display: none;
+}
+
+.CheckboxInput label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  background: url('./../../assets/img/checkbox-off.svg') 0 0 no-repeat;
+  background-size: 16px;
+}
+
+/* Checked */
+.CheckboxInput input[type=checkbox]:checked + label:before {
+  background: url('./../../assets/img/checkbox-on.svg') 0 0 no-repeat;
+  background-size: 16px;
+}
+
+///* Hover */
+//.CheckboxInput label:hover:before {
+//  filter: brightness(120%);
+//}
+
+/* Disabled */
+.CheckboxInput input[type=checkbox]:disabled + label:before {
+  filter: grayscale(100%);
+}

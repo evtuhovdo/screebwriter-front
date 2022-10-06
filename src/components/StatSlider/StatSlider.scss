@@ -1,0 +1,30 @@
+.rc-slider-track {
+  background-color: #03C5D0;
+}
+
+.rc-slider-handle {
+  width: 14px;
+  height: 14px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  border: none;
+
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #00AFB9;
+    border-radius: 4px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+  }
+}
+
+.rc-slider-handle-click-focused:focus, .rc-slider-handle:active {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+

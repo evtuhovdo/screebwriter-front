@@ -1,0 +1,20 @@
+.ColorOption {
+  display: flex;
+  align-items: center;
+
+  &__dot {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    border-radius: 15px;
+  }
+
+  &__label {
+
+  }
+
+  &__icon {
+    cursor: pointer;
+    margin-left: 5px;
+  }
+}

@@ -1,0 +1,250 @@
+.MainForm {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+
+  .centerForm {
+    margin: 0 auto;
+    max-width: 1200px;
+
+    .storyInfo {
+      padding-right: 20px;
+      display: flex;
+      flex-direction: row;
+
+      .storyInfo__item {
+        .label {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 11px;
+          line-height: 13px;
+          color: #979797;
+          margin-bottom: 6px;
+        }
+
+        .value {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          color: #000000;
+          margin-bottom: 20px;
+        }
+      }
+
+      .storyInfo__item + .storyInfo__item {
+        margin-left: 20px;
+      }
+    }
+
+    .TextareaInput + .TextareaInput {
+      margin-top: 10px;
+    }
+
+    .storyTextTextarea {
+      width: 627px;
+
+      textarea {
+        height: 50px;
+      }
+    }
+
+    .commentTextarea {
+      margin-left: 141px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+
+      textarea {
+        width: 465px;
+        height: 60px;
+      }
+    }
+
+    .questionTextarea {
+      width: 627px;
+
+      textarea {
+        height: 36px;
+      }
+    }
+
+    .optionsOptionTextarea {
+      textarea {
+        height: 64px;
+      }
+    }
+
+    .optionsResultTextarea {
+      textarea {
+        height: 164px;
+      }
+    }
+
+    .optionsDiaryEntryTextarea {
+      textarea {
+        height: 220px;
+      }
+    }
+
+    button.remove {
+      cursor: pointer;
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+      border: none;
+      background: url("./../../assets/img/minus.svg") no-repeat center;
+    }
+
+    .topRow {
+      padding-right: 20px;
+      padding-left: 141px;
+      display: flex;
+      flex-direction: row;
+
+      .selects {
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-evenly;
+
+        &.template-selects  {
+          align-items: flex-end;
+          button {
+            height: 40px;
+            margin-left: 20px;
+          }
+        }
+        .SelectInput {
+          width: 100%;
+        }
+
+        .CascaderInput {
+          width: 100%;
+          .ant-cascader-picker {
+            height: 38px;
+          }
+        }
+
+        .SelectInput + .SelectInput {
+          margin-left: 20px;
+        }
+
+        .CascaderInput + .CascaderInput {
+          margin-left: 20px;
+        }
+
+        .CascaderInput + .SelectInput {
+          margin-left: 20px;
+        }
+
+        .SelectInput + .CascaderInput {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .tags {
+      margin-left: 20px;
+
+      .ant-table.ant-table-small .ant-table-tbody > tr > td,
+      .ant-table-small .ant-table-thead > tr > th
+      {
+        padding: 4px;
+        font-size: 12px;
+      }
+
+      .label {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        padding-bottom: 10px;
+      }
+
+      &__list {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 300px;
+        margin-top: 6px;
+
+        .Tag {
+          margin-right: 5px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .columns {
+      display: flex;
+      margin-top: 20px;
+      overflow: auto;
+
+      .column-labels {
+        width: 141px;
+        min-width: 141px;
+        position: relative;
+
+        .label {
+          position: absolute;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          color: #979797;
+
+          &:nth-child(1) {
+            top: 30px;
+            right: 32px;
+          }
+
+          &:nth-child(2) {
+            top: 120px;
+            right: 32px;
+          }
+
+          &:nth-child(3) {
+            top: 310px;
+            right: 32px;
+          }
+        }
+      }
+
+      .column {
+        position: relative;
+        width: 223px;
+        min-width: 223px;
+        background: #F0F0F0;
+        border-radius: 4px;
+        margin-right: 20px;
+        padding: 8px 10px;
+
+        &--add {
+          cursor: pointer;
+          background: url("./../../assets/img/plus.svg") no-repeat center #F0F0F0;
+        }
+      }
+    }
+
+    .Button-wrapper {
+      margin-left: 141px;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: row;
+
+      .Button {
+        width: 223px;
+      }
+
+      .Button + .Button {
+        margin-left: 20px;
+
+      }
+    }
+  }
+
+  .ant-table-tbody > tr.ant-table-row-level-0:hover > td {
+    background: unset;
+  }
+}

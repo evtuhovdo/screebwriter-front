@@ -1,0 +1,117 @@
+.TextareaInput {
+  &--withError {
+
+  }
+
+  &__label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+    margin-bottom: 6px;
+  }
+
+  &__input {
+    height: 40px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 9px;
+    font-style: normal;
+    font-weight: 500;
+    color: #333333;
+    resize: none;
+    outline: none;
+    font-size: 12px;
+    line-height: 14px;
+
+    &:focus {
+      border: 1px solid #00AFB9;
+      box-sizing: border-box;
+      border-radius: 2px;
+    }
+
+    &:disabled {
+      background-color: #fbfafa;
+      border-color: hsl(0, 0%, 90%);
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active
+    {
+      -webkit-box-shadow: 0 0 0 30px white inset !important;
+    }
+  }
+
+  &__error {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__message {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #C800A1;
+      margin-top: 4px;
+      min-height: 16px;
+      white-space: pre-line;
+    }
+  }
+
+  &__symbolCount {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: right;
+    color: #979797;
+    transition: 0.1s ease-in-out color;
+
+    &__limit {
+      color: #C800A1;
+    }
+  }
+}
+
+.public-DraftStyleDefault-block {
+  height: 40px;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 9px;
+  font-style: normal;
+  font-weight: 500;
+  color: #333333;
+  resize: none;
+  outline: none;
+  font-size: 12px;
+  line-height: 14px;
+
+  &:focus {
+    border: 1px solid #00AFB9;
+    box-sizing: border-box;
+    border-radius: 2px;
+  }
+
+  &:disabled {
+    background-color: #fbfafa;
+    border-color: hsl(0, 0%, 90%);
+  }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active
+  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+  }
+}

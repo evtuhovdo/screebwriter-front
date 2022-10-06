@@ -1,0 +1,47 @@
+.RadioInput {
+  margin-bottom: 8px;
+}
+
+.RadioInput input[type=radio] {
+  display: none;
+}
+
+.RadioInput label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+  padding-left: 20px;
+  margin-right: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  user-select: none;
+}
+
+.RadioInput label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  background: url('./../../assets/img/radio-off.svg') 0 0 no-repeat;
+}
+
+/* Checked */
+.RadioInput input[type=radio]:checked + label:before {
+  background: url('./../../assets/img/radio-on.svg') 0 0 no-repeat;
+}
+
+///* Hover */
+//.RadioInput label:hover:before {
+//  filter: brightness(120%);
+//}
+
+/* Disabled */
+.RadioInput input[type=radio]:disabled + label:before {
+  filter: grayscale(100%);
+}

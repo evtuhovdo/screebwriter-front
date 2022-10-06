@@ -1,0 +1,12 @@
+version: '2'
+services:
+  nginx:
+    container_name: screenwriter_frontend
+    build:
+      context: .
+      dockerfile: ./docker/nginx/Dockerfile
+    expose:
+      - 80
+    env_file:
+      - ./global.env
+    network_mode: bridge
