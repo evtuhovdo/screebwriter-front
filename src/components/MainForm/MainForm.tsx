@@ -121,17 +121,18 @@ const MainForm: FC<IProps> = (
 
     const { statusToSave = StoryStatus.DRAFT, ...restValues } = values;
 
-    //TODO: DISABLED For language check
-    if (statusesWithPremiumValidation.includes(statusToSave)) {
-      const errors = await validateFormBeforeSaveFinal(apiClient)(restValues);
-      const errorsCount = Object.keys(errors).length;
+    // TODO: uncomment the check and 
+    // DISABLED For language check 
+    // if (statusesWithPremiumValidation.includes(statusToSave)) {
+    //   const errors = await validateFormBeforeSaveFinal(apiClient)(restValues);
+    //   const errorsCount = Object.keys(errors).length;
 
-      if (errorsCount > 0) {
-        formikBag.setErrors(errors);
+    //   if (errorsCount > 0) {
+    //     formikBag.setErrors(errors);
 
-        return false;
-      }
-    }
+    //     return false;
+    //   }
+    // }
 
     const { template, ...clearValues } = restValues;
 
