@@ -3,19 +3,19 @@ import { Cascader } from 'antd';
 import { CascaderProps } from 'antd/lib/cascader';
   
 /** BAD TS declaration */
-interface IProps extends CascaderProps {
- }
+// interface IProps extends CascaderProps {
+//  }
 
-/**TODO: CORRECT TS declaration */
-// export type  IProps = CascaderProps<any> & {
-//   onPopupVisibleChange?:any,
-//   placeholder?:any,
-//   onChange?:any,
-//   value?:any,
-//   disabled?:any,
-//   options?:any,
+/**CORRECT TS declaration */
+export type  IProps = CascaderProps<any> & {
+  onPopupVisibleChange?:any,
+  placeholder?:any,
+  onChange?:any,
+  value?:any,
+  disabled?:any,
+  options?:any,
 
-// }
+}
 const PureCascaderInput: FC<IProps> = (
   {
     onPopupVisibleChange,

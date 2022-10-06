@@ -11,12 +11,12 @@ import PureSelect from './PureSelect';
 
 export interface ISelectOption {
   // WRONG declaration 
-  value: string | number | object,
-  label: string,
-
-  //TODO: CORRECT declaration 
-  // value: string ,
+  // value: string | number | object,
   // label: string,
+
+  // CORRECT declaration 
+  value: string ,
+  label: string,
 }
 
 interface IProps extends FieldProps {
