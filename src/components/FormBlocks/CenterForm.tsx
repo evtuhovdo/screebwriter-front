@@ -55,7 +55,7 @@ const CenterForm: FC<IProps> = (
         />
       </div>
 
-      {story && (role === EDITOR || role === ADMIN) && (
+      {story && (role === EDITOR || role === ADMIN) && (story?.author?.id) && (
         <Rates storyId={story.id} storyAuthorId={story.author.id}/>
       )}
 
