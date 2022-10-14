@@ -98,7 +98,7 @@ const StoryListItem: FC<IProps> = (
       </div>
       <div className="StoryListItem__text">
         <div className="many">
-          <div>{story.author.username}</div>
+          <div>{story?.author?.username ?? '???'}</div>
           <div>createdAt<br/>{createdAt}</div>
           {authorFinishDate && (
             <div>finishedAt<br/>{authorFinishDate}</div>
