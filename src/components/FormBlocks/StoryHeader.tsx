@@ -41,7 +41,7 @@ const StoryHeader: FC<IProps> = ({ story }) => {
             Author
           </div>
           <div className="value">
-            {story.author.username}
+            {story?.author?.username ?? '???'}
           </div>
         </div>
 
